@@ -12,9 +12,9 @@ spec:
     spec:
       containers:
       - name: spire-nginx
-        image: quay.io/robertjscott/robertjscott.ca:0.1.1
+        image: quay.io/robertjscott/robertjscott.ca:0.1.2
         imagePullPolicy: Always
         readinessProbe:
           httpGet:
             path: /health
-            port: 443
+            port: 80

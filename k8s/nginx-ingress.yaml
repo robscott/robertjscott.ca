@@ -36,4 +36,4 @@ spec:
       - path: /*
         backend:
           serviceName: robertjscott-ca
-          servicePort: 443
+          servicePort: 80
