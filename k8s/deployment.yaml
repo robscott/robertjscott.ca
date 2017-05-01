@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: robertjscott-ca-deployment
+  namespace: robertjscott-ca
 spec:
   replicas: 3
   template:

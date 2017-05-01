@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: robertjscott-ca
+  namespace: robertjscott-ca
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "gce"
+spec:
+  tls:
+  - hosts:
+    - robertjscott.ca
+    - www.robertjscott.ca
+    secretName: robertjscott-ca-tls
+  rules:
+  - host: robertjscott.ca
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: echoserver
+          servicePort: 80
