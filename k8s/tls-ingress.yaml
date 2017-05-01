@@ -18,5 +18,5 @@ spec:
       paths:
       - path: /*
         backend:
-          serviceName: echoserver
-          servicePort: 80
+          serviceName: robertjscott-ca
+          servicePort: 443

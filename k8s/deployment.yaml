@@ -12,5 +12,7 @@ spec:
     spec:
       containers:
       - name: spire-nginx
-        image: quay.io/robertjscott/robertjscott.ca:master
+        image: quay.io/robertjscott/robertjscott.ca:latest
         imagePullPolicy: Always
+        ports:
+        - containerPort: 443
