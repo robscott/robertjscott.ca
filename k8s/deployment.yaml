@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: spire-nginx
-        image: quay.io/robertjscott/robertjscott.ca:master
+        image: quay.io/robertjscott/robertjscott.ca:0.1.0
         imagePullPolicy: Always
         readinessProbe:
           httpGet:
