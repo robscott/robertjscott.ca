@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: robertjscott-ca-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: robertjscott-ca
+    spec:
+      containers:
+      - name: spire-nginx
+        image: quay.io/robertjscott/robertjscott.ca:master
+        imagePullPolicy: Always
