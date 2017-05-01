@@ -5,7 +5,8 @@ body {
 }
 
 .wrapper {
-  width: 600px;
+  width: 570px;
+  padding: 0 15px;
   margin: 100px auto;
 }
 
@@ -55,6 +56,8 @@ h2.section-header {
 
 ul.highlights-list li {
   color: #ccc;
+  font-size: 16px;
+  line-height: 24px;
   margin: 10px 0;
 }
 
@@ -77,7 +80,7 @@ ul.highlights-list li {
 }
 
 .social-links .social-link .social-icon {
-  font-size: 20px;
+  font-size: 24px;
   display: block;
   margin: 10px 0;
 }
