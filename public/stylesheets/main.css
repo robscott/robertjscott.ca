@@ -18,6 +18,15 @@ h1.name {
   margin: 0;
 }
 
+h1.talk-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #fff;
+  margin: 40px;
+  text-align: center;
+}
+
 img.picture {
   width: 160px;
   height: 160px;
@@ -54,11 +63,31 @@ h2.section-header {
   font-size: 24px;
 }
 
+h3 {
+  color: #ccc;
+  font-weight: 100;
+  margin-top: -10px;
+  font-size: 18px;
+}
+
 ul.highlights-list li {
   color: #ccc;
   font-size: 16px;
   line-height: 24px;
   margin: 10px 0;
+}
+
+ul.talk-events li {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+ul.talk-events li a {
+  font-size: 13px;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .social-links {
