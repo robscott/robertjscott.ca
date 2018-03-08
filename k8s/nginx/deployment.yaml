@@ -1,39 +1,56 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: nginx
+  name: nginx-ingress-controller
   namespace: nginx-ingress
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
   template:
     metadata:
       labels:
         app: nginx
     spec:
+      serviceAccountName: nginx-ingress-serviceaccount
       containers:
-      - image: gcr.io/google_containers/nginx-ingress-controller:0.8.3
-        name: nginx
-        imagePullPolicy: Always
-        env:
-          - name: POD_NAME
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.name
-          - name: POD_NAMESPACE
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.namespace
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 10254
-            scheme: HTTP
-          initialDelaySeconds: 30
-          timeoutSeconds: 5
-        ports:
-        - containerPort: 80
-        - containerPort: 443
-        args:
-        - /nginx-ingress-controller
-        - --default-backend-service=nginx-ingress/default-http-backend
-        - --nginx-configmap=nginx-ingress/nginx
+        - name: nginx-ingress-controller
+          image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.11.0
+          args:
+            - /nginx-ingress-controller
+            - --default-backend-service=nginx-ingress/default-http-backend
+            - --configmap=nginx-ingress/nginx
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+          ports:
+          - name: http
+            containerPort: 80
+          - name: https
+            containerPort: 443
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /healthz
+              port: 10254
+              scheme: HTTP
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /healthz
+              port: 10254
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1

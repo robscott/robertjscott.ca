@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: robertjscott-ca
-        image: quay.io/robertjscott/robertjscott.ca:latest
+        image: quay.io/robertjscott/robertjscott.ca:0.3.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
