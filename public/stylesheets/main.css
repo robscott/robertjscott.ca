@@ -1,7 +1,7 @@
 body {
-  background-color: #333;
-  font-family: Roboto, sans-serif;
-  font-weight: 100;
+  background-color: #36384a;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
 }
 
 .wrapper {
@@ -13,26 +13,17 @@ body {
 h1.name {
   font-size: 60px;
   line-height: 60px;
-  font-weight: 100;
+  font-weight: 700;
   color: #fff;
   margin: 0;
-}
-
-h1.talk-title {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 100;
-  color: #fff;
-  margin: 40px;
-  text-align: center;
 }
 
 img.picture {
   width: 160px;
   height: 160px;
-  border-radius: 80px;
-  border: 3px solid #fff;
-  box-shadow: 0px 2px 4px #000;
+  border-radius: 88px;
+  border: 4px solid #fff;
+  box-shadow: 0px 2px 4px #024;
   display: block;
   margin: 0 auto;
   float: left;
@@ -40,16 +31,15 @@ img.picture {
 }
 
 p.intro {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  color: #fff;
   margin: 10px 0 30px 190px;
-  color: #ccc;
+  color: #def;
 }
 
 a {
-  color: #bcf;
+  color: #abf;
   text-decoration: none;
 }
 
@@ -59,26 +49,31 @@ a:hover {
 
 h2.section-header {
   color: #fff;
-  font-weight: 100;
+  font-weight: 700;
   font-size: 24px;
+  margin-top: 40px;
 }
 
-h3 {
-  color: #ccc;
-  font-weight: 100;
+h3.talk-title {
+  color: #def;
+  font-weight: 300;
   margin-top: -10px;
   font-size: 18px;
 }
 
+h3.talk-title.extra-top {
+  margin-top: 30px;
+}
+
 ul.highlights-list li {
-  color: #ccc;
+  color: #def;
   font-size: 16px;
   line-height: 24px;
   margin: 10px 0;
 }
 
 ul.talk-events li {
-  color: #ccc;
+  color: #cdf;
   font-size: 16px;
   line-height: 24px;
   margin: 10px 0;
@@ -97,7 +92,7 @@ ul.talk-events li a {
 }
 
 .social-links .social-link {
-  color: #ccc;
+  color: #abf;
   margin: 10px 0;
   width: 150px;
   font-size: 14px;
