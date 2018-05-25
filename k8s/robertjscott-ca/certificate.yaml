@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: robertjscott-ca-prod-cert
+  namespace: robertjscott-ca
+spec:
+  secretName: robertjscott-ca-letsencrypt
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: '*.robertjscott.ca'
+  dnsNames:
+  - robertjscott.ca
+  acme:
+    config:
+    - dns01:
+        provider: gcloud-dns
+      domains:
+      - '*.robertjscott.ca'
+      - robertjscott.ca
