@@ -73,7 +73,7 @@ h3.talk-title.extra-top {
   margin-top: 30px;
 }
 
-ul.highlights-list li {
+ul.highlights-list li, ul.writing-list li  {
   color: #def;
   font-size: 16px;
   line-height: 24px;
