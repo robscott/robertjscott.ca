@@ -41,7 +41,7 @@ img.picture {
 p.intro {
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.5;
   margin: 10px 0 30px 190px;
   color: #def;
 }
@@ -65,8 +65,9 @@ h2.section-header {
 h3.talk-title {
   color: #def;
   font-weight: 300;
-  margin-top: -10px;
+  margin-top: -10px 0 0;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 h3.talk-title.extra-top {
@@ -76,21 +77,24 @@ h3.talk-title.extra-top {
 ul.highlights-list li, ul.writing-list li  {
   color: #def;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   margin: 10px 0;
+}
+
+ul.talk-events {
+  margin: 5px 0;
 }
 
 ul.talk-events li {
   color: #cdf;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   margin: 10px 0;
 }
 
 ul.talk-events li a {
   font-size: 13px;
-  display: inline-block;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .social-links {
