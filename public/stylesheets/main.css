@@ -43,7 +43,7 @@ p.intro {
   font-size: 18px;
   line-height: 1.5;
   margin: 10px 0 30px 190px;
-  color: #def;
+  color: #f9f2ff;
 }
 
 a {
@@ -63,19 +63,19 @@ h2.section-header {
 }
 
 h3.talk-title {
-  color: #def;
+  color: #f9f2ff;
   font-weight: 300;
-  margin-top: -10px 0 0;
+  margin: -10px 0 0;
   font-size: 18px;
   line-height: 1.5;
 }
 
 h3.talk-title.extra-top {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 ul.highlights-list li, ul.writing-list li  {
-  color: #def;
+  color: #f9f2ff;
   font-size: 16px;
   line-height: 1.5;
   margin: 10px 0;
@@ -83,18 +83,20 @@ ul.highlights-list li, ul.writing-list li  {
 
 ul.talk-events {
   margin: 5px 0;
+  padding: 0 30px;
 }
 
 ul.talk-events li {
-  color: #cdf;
-  font-size: 16px;
+  color: #b3b5ca;
+  font-size: 14px;
+  font-weight: 100;
   line-height: 1.5;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 ul.talk-events li a {
   font-size: 13px;
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
 .social-links {
