@@ -1,5 +1,5 @@
 body {
-  background-color: #36384a;
+  background-color: #345;
   font-family: Lato, sans-serif;
   font-weight: 300;
 }
@@ -43,11 +43,11 @@ p.intro {
   font-size: 18px;
   line-height: 1.5;
   margin: 10px 0 30px 190px;
-  color: #f9f2ff;
+  color: #eff;
 }
 
 a {
-  color: #abf;
+  color: #bff;
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ h2.section-header {
 }
 
 h3.talk-title {
-  color: #f9f2ff;
+  color: #eff;
   font-weight: 300;
   margin: -10px 0 0;
   font-size: 18px;
@@ -75,7 +75,7 @@ h3.talk-title.extra-top {
 }
 
 ul.highlights-list li, ul.writing-list li  {
-  color: #f9f2ff;
+  color: #eff;
   font-size: 16px;
   line-height: 1.5;
   margin: 10px 0;
@@ -87,7 +87,7 @@ ul.talk-events {
 }
 
 ul.talk-events li {
-  color: #b3b5ca;
+  color: #dee;
   font-size: 14px;
   font-weight: 100;
   line-height: 1.5;
@@ -106,7 +106,7 @@ ul.talk-events li a {
 }
 
 .social-links .social-link {
-  color: #abf;
+  color: #bdd;
   margin: 10px 0;
   width: 150px;
   font-size: 14px;
