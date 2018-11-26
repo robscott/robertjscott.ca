@@ -117,11 +117,13 @@ spec:
       serviceAccountName: cert-manager
       containers:
         - name: cert-manager
-          image: "quay.io/jetstack/cert-manager-controller:v0.4.1"
+          image: "quay.io/jetstack/cert-manager-controller:v0.5.2"
           imagePullPolicy: IfNotPresent
           args:
           - --cluster-resource-namespace=$(POD_NAMESPACE)
           - --leader-election-namespace=$(POD_NAMESPACE)
+          - --default-acme-issuer-challenge-type=dns01
+          - --default-acme-issuer-dns01-provider-name=clouddns
           env:
           - name: POD_NAMESPACE
             valueFrom:

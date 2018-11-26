@@ -15,7 +15,7 @@ spec:
     dns01:
       # Here we define a list of DNS-01 providers that can solve DNS challenges
       providers:
-        - name: gcloud-dns
+        - name: clouddns
           clouddns:
             # A secretKeyRef to a google cloud json service account
             serviceAccountSecretRef:
