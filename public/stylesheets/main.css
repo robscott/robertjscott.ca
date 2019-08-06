@@ -1,5 +1,5 @@
 body {
-  background-color: #345;
+  background-color: #234;
   font-family: Lato, sans-serif;
   font-weight: 300;
 }
@@ -11,8 +11,8 @@ body {
 }
 
 h1.name {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 70px;
+  line-height: 70px;
   font-weight: 700;
   color: #fff;
   margin: 0;
@@ -27,15 +27,14 @@ h1.standalone-talk-title {
 }
 
 img.picture {
-  width: 160px;
-  height: 160px;
-  border-radius: 88px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
   border: 4px solid #fff;
   box-shadow: 0px 2px 4px #024;
   display: block;
-  margin: 0 auto;
-  float: left;
-  margin: 0 20px 0 0;
+  float: right;
+  margin: -40px 20px 0 0;
 }
 
 p.intro {
