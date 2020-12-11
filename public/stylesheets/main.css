@@ -34,7 +34,7 @@ img.picture {
   box-shadow: 0px 2px 4px #024;
   display: block;
   float: right;
-  margin: -40px 20px 0 0;
+  margin: -20px 20px 0 0;
 }
 
 p.intro {
@@ -59,6 +59,7 @@ h2.section-header {
   font-weight: 700;
   font-size: 24px;
   margin-top: 40px;
+  clear: both;
 }
 
 h3.talk-title {
@@ -73,7 +74,7 @@ h3.talk-title.extra-top {
   margin-top: 15px;
 }
 
-ul.highlights-list li, ul.projects-list li, ul.writing-list li  {
+ul.other-list li, ul.projects-list li, ul.writing-list li  {
   color: #eff;
   font-size: 16px;
   line-height: 1.5;
@@ -98,30 +99,43 @@ ul.talk-events li a {
   margin-left: 6px;
 }
 
-.social-links {
-  width: 240px;
-  height: 60px;
-  margin: 40px auto;
-}
-
 .social-links .social-link {
   color: #bdd;
-  margin: 10px 0;
-  width: 150px;
-  font-size: 14px;
-  text-align: center;
+  margin: 10px 20px 40px 0;
+  font-size: 18px;
+  line-height: 40px;
   text-decoration: none;
   display: block;
-  width: 80px;
   float: left;
 }
 
 .social-links .social-link .social-icon {
-  font-size: 24px;
-  display: block;
-  margin: 10px 0;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px -3px 0;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  fill: #fff;
+}
+
+.social-links .social-link .social-icon.twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+.social-links .social-link .social-icon.github {
+  background-image: url(../images/github.svg);
 }
 
 .social-links .social-link:hover {
   color: #fff;
+}
+
+.social-links .social-link:hover .social-icon.twitter {
+  background-image: url(../images/twitter-hover.svg);
+}
+
+.social-links .social-link:hover .social-icon.github {
+  background-image: url(../images/github-hover.svg);
 }

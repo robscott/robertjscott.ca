@@ -9,12 +9,7 @@
   <meta name="author" content="Rob Scott">
   <meta name="viewport" content="width=600">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,700">
-  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?aovs">
-  <link rel="stylesheet" href="stylesheets/main.css">
-  <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+  <link rel="stylesheet" href="stylesheets/main.css?v=2">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117922537-1"></script>
@@ -29,101 +24,44 @@
 
 <body>
   <div class="wrapper">
-    <img class="picture" src="images/rob-scott.jpg" alt="Rob Scott" />
+    <img class="picture" src="images/robertjscott.jpg" alt="Rob Scott" />
     <h1 class="name">Rob Scott</h1>
 
-    <h2 class="section-header highlights">Highlights</h2>
-    <ul class="highlights-list">
-      <li>
-        Contributed first section of an Ebook published by The New Stack: <a
-          href="https://thenewstack.io/ebooks/kubernetes/ci-cd-with-kubernetes" target="_blank">CI/CD with
-          Kubernetes</a>
-      </li>
-      <li>
-        Featured in the AWS series "This is My Architecture": <a href="https://www.youtube.com/watch?v=xvXy2BiaWrQ"
-          target="_blank">
-          Spire Labs: Fault-tolerance with Kubernetes on AWS
-        </a>
-      </li>
-    </ul>
-
-    <h2 class="section-header projects">Projects</h2>
-    <ul class="projects-list">
-      <li>
-        <a href="https://github.com/fairwindsops/polaris" target="_blank">Polaris</a>: Validation of best practices in
-        Kubernetes clusters.
-      </li>
-      <li>
-        <a href="https://github.com/robscott/kube-capacity" target="_blank">Kube Capacity</a>: A simple CLI that
-        provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
-      </li>
-      <li>
-        <a href="https://github.com/fairwindsops/rbac-manager" target="_blank">RBAC Manager</a>: A Kubernetes
-        operator
-        that simplifies the management of Role Bindings and Service Accounts.
-      </li>
-      <li>
-        <a href="https://github.com/fairwindsops/rbac-lookup" target="_blank">RBAC Lookup</a>: Easily find roles
-        and
-        cluster roles attached to any user, service account, or group name in your Kubernetes cluster.
-      </li>
-    </ul>
-
-    <h2 class="section-header writing">Writing</h2>
-    <ul class="writing-list">
-      <li>
-        <a href="https://thenewstack.io/effective-monitoring-in-a-cloud-native-world/" target="_blank">
-          Effective Monitoring in a Cloud Native World
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/uptime-99/making-sense-of-kubernetes-rbac-and-iam-roles-on-gke-914131b01922"
-          target="_blank">
-          Making Sense of Kubernetes RBAC and IAM Roles on GKE
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/uptime-99/rbac-lookup-reverse-lookup-for-kubernetes-authorization-b19f1953cc6c"
-          target="_blank">
-          rbac-lookup: Reverse Lookup for Kubernetes Authorization
-        </a>
-      </li>
-      <li>
-        <a href="https://thenewstack.io/ci-cd-with-kubernetes-tools-and-practices/" target="_blank">
-          CI/CD with Kubernetes: Tools and Practices
-        </a>
-      </li>
-      <li>
-        <a href="https://thenewstack.io/7-features-that-make-kubernetes-ideal-for-ci-cd/" target="_blank">
-          7 Features that Make Kubernetes Ideal for CI/CD
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/uptime-99/simplifying-kubernetes-rbac-management-66938c67265c" target="_blank">
-          Simplifying Kubernetes RBAC Management
-        </a>
-      </li>
-      <li>
-        <a href="https://thenewstack.io/devops-microservices-kubernetes-a-cloud-native-approach" target="_blank">
-          DevOps, Microservices, Kubernetes: A Cloud-Native Approach
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/spire-labs/utilizing-kubernetes-liveness-and-readiness-probes-to-automatically-recover-from-failure-2fe0314f2b2e"
-          target="_blank">
-          Utilizing Kubernetes Liveness and Readiness Probes to Automatically Recover From Failure
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/spire-labs/mitigating-an-aws-instance-failure-with-the-magic-of-kubernetes-128a44d44c14"
-          target="_blank">
-          Mitigating an AWS Instance Failure with the Magic of Kubernetes
-        </a>
-      </li>
-    </ul>
+    <div class="social-links">
+      <a class="social-link" href="https://twitter.com/robertjscott" target="_blank">
+        <span class="social-icon twitter"></span>Twitter
+      </a>
+      <a class="social-link" href="https://github.com/robscott" target="_blank">
+        <span class="social-icon github"></span>GitHub
+      </a>
+    </div>
 
     <h2 class="section-header talks">Talks</h2>
-    <h3 class="talk-title">Smarter Kubernetes Access Control: A Simpler Approach to Auth</h3>
+    <h3 class="talk-title">Improving Network Efficiency with Topology Aware Routing</h3>
+    <ul class="talk-events">
+      <li class="talk-event">
+        KubeCon Boston 2020 (Virtual)
+        <a class="video" target="_blank" href="https://youtu.be/rU56yr7txPM">Video</a>
+      </li>
+    </ul>
+
+    <h3 class="talk-title extra-top">Scaling Kubernetes Networking Beyond 100k Endpoints</h3>
+    <ul class="talk-events">
+      <li class="talk-event">
+        KubeCon Amsterdam 2020 (Virtual)
+        <a class="video" target="_blank" href="https://youtu.be/a6SfbeM06Qo">Video</a>
+      </li>
+    </ul>
+
+    <h3 class="talk-title extra-top">SIG-Network Deep Dive</h3>
+    <ul class="talk-events">
+      <li class="talk-event">
+        KubeCon San Diego 2019
+        <a class="video" target="_blank" href="https://youtu.be/lWOSCXufgyw?t=1867">Video</a>
+      </li>
+    </ul>
+
+    <h3 class="talk-title extra-top">Smarter Kubernetes Access Control: A Simpler Approach to Auth</h3>
     <ul class="talk-events">
       <li class="talk-event">
         KubeCon Barcelona 2019
@@ -205,17 +143,122 @@
       </li>
     </ul>
 
-    <div class="social-links">
-      <a class="social-link" href="https://twitter.com/robertjscott" target="_blank">
-        <span class="social-icon socicon-twitter"></span>Twitter
-      </a>
-      <a class="social-link" href="https://medium.com/@robertjscott" target="_blank">
-        <span class="social-icon socicon-medium"></span>Medium
-      </a>
-      <a class="social-link" href="https://github.com/robscott" target="_blank">
-        <span class="social-icon socicon-github"></span>GitHub
-      </a>
-    </div>
+    <h2 class="section-header projects">Projects</h2>
+    <ul class="projects-list">
+      <li>
+        <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">Kubernetes
+          Service APIs</a>: A new set of advanced routing APIs.
+      </li>
+      <li>
+        <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">Kubernetes
+          Ingress</a>: API updates and GA graduation.
+      </li>
+      <li>
+        <a href="https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/" target="_blank">Kubernetes
+          EndpointSlices</a>: Providing
+        scalability and extensibility.
+      </li>
+
+      <li>
+        <a href="https://github.com/fairwindsops/polaris" target="_blank">Polaris</a>: Validation of best practices in
+        Kubernetes clusters.
+      </li>
+      <li>
+        <a href="https://github.com/robscott/kube-capacity" target="_blank">Kube Capacity</a>: A simple CLI that
+        provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
+      </li>
+      <li>
+        <a href="https://github.com/fairwindsops/rbac-manager" target="_blank">RBAC Manager</a>: A Kubernetes
+        operator
+        that simplifies the management of Role Bindings and Service Accounts.
+      </li>
+      <li>
+        <a href="https://github.com/fairwindsops/rbac-lookup" target="_blank">RBAC Lookup</a>: Easily find roles
+        and
+        cluster roles attached to any user, service account, or group name in your Kubernetes cluster.
+      </li>
+    </ul>
+
+    <h2 class="section-header writing">Writing</h2>
+    <ul class="writing-list">
+      <li>
+        <a href="https://kubernetes.io/blog/2020/09/02/scaling-kubernetes-networking-with-endpointslices/"
+          target="_blank">
+          Scaling Kubernetes Networking With EndpointSlices
+        </a>
+      </li>
+      <li>
+        <a href="https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/"
+          target="_blank">
+          Improvements to the Ingress API in Kubernetes 1.18
+        </a>
+      </li>
+      <li>
+        <a href="https://thenewstack.io/effective-monitoring-in-a-cloud-native-world/" target="_blank">
+          Effective Monitoring in a Cloud Native World
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/uptime-99/making-sense-of-kubernetes-rbac-and-iam-roles-on-gke-914131b01922"
+          target="_blank">
+          Making Sense of Kubernetes RBAC and IAM Roles on GKE
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/uptime-99/rbac-lookup-reverse-lookup-for-kubernetes-authorization-b19f1953cc6c"
+          target="_blank">
+          rbac-lookup: Reverse Lookup for Kubernetes Authorization
+        </a>
+      </li>
+      <li>
+        <a href="https://thenewstack.io/ci-cd-with-kubernetes-tools-and-practices/" target="_blank">
+          CI/CD with Kubernetes: Tools and Practices
+        </a>
+      </li>
+      <li>
+        <a href="https://thenewstack.io/7-features-that-make-kubernetes-ideal-for-ci-cd/" target="_blank">
+          7 Features that Make Kubernetes Ideal for CI/CD
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/uptime-99/simplifying-kubernetes-rbac-management-66938c67265c" target="_blank">
+          Simplifying Kubernetes RBAC Management
+        </a>
+      </li>
+      <li>
+        <a href="https://thenewstack.io/devops-microservices-kubernetes-a-cloud-native-approach" target="_blank">
+          DevOps, Microservices, Kubernetes: A Cloud-Native Approach
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/spire-labs/utilizing-kubernetes-liveness-and-readiness-probes-to-automatically-recover-from-failure-2fe0314f2b2e"
+          target="_blank">
+          Utilizing Kubernetes Liveness and Readiness Probes to Automatically Recover From Failure
+        </a>
+      </li>
+      <li>
+        <a href="https://medium.com/spire-labs/mitigating-an-aws-instance-failure-with-the-magic-of-kubernetes-128a44d44c14"
+          target="_blank">
+          Mitigating an AWS Instance Failure with the Magic of Kubernetes
+        </a>
+      </li>
+    </ul>
+
+    <h2 class="section-header other">Other</h2>
+    <ul class="other-list">
+      <li>
+        Contributed first section of an Ebook published by The New Stack: <a
+          href="https://thenewstack.io/ebooks/kubernetes/ci-cd-with-kubernetes" target="_blank">CI/CD with
+          Kubernetes</a>
+      </li>
+      <li>
+        Featured in the AWS series "This is My Architecture": <a href="https://www.youtube.com/watch?v=xvXy2BiaWrQ"
+          target="_blank">
+          Spire Labs: Fault-tolerance with Kubernetes on AWS
+        </a>
+      </li>
+    </ul>
+
   </div>
 </body>
 
