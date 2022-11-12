@@ -9,7 +9,8 @@
   <meta name="author" content="Rob Scott">
   <meta name="viewport" content="width=600">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,700">
-  <link rel="stylesheet" href="stylesheets/main.css?v=2">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="stylesheets/main.css?v=3">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117922537-1"></script>
@@ -24,240 +25,133 @@
 
 <body>
   <div class="wrapper">
-    <img class="picture" src="images/robertjscott.jpg" alt="Rob Scott" />
+    <img class="picture" src="images/robscott.jpg" alt="Rob Scott" />
     <h1 class="name">Rob Scott</h1>
+    <p class="intro">
+      Hey, I'm Rob, an open source enthusiast currently focused on Kubernetes
+      Networking. I'm a maintainer of <a
+      href="https://gateway-api.sigs.k8s.io/">Gateway API</a>, led the
+      development of
+      <a
+      href="https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/">EndpointSlices</a>,
+      and work on lots of other Kubernetes related things. This is a central
+      place to keep track of some of the various things I've written or
+      presented. This site tends to go for long periods without getting updated,
+      so you can also find me on any of the following:
+    </p>
 
-    <div class="social-links">
-      <a class="social-link" href="https://twitter.com/robertjscott" target="_blank">
-        <span class="social-icon twitter"></span>Twitter
-      </a>
-      <a class="social-link" href="https://github.com/robscott" target="_blank">
-        <span class="social-icon github"></span>GitHub
-      </a>
-    </div>
-
-    <h2 class="section-header talks">Talks</h2>
-    <h3 class="talk-title">Improving Network Efficiency with Topology Aware Routing</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        KubeCon Boston 2020 (Virtual)
-        <a class="video" target="_blank" href="https://youtu.be/rU56yr7txPM">Video</a>
+    <ul class="social-links">
+      <li>
+        <a href="https://twitter.com/robertjscott" target="_blank"><span class="material-symbols-outlined">edit_note</span>Twitter</a>
+      </li>
+      <li>
+        <a href="https://github.com/robscott" target="_blank"><span class="material-symbols-outlined">terminal</span>GitHub</a>
+      </li>
+      <li>
+        <a href="https://hachyderm.io/@rob" target="_blank"><span class="material-symbols-outlined">auto_awesome</span>Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/robertjscott1/" target="_blank"><span class="material-symbols-outlined">work</span>LinkedIn</a>
       </li>
     </ul>
 
-    <h3 class="talk-title extra-top">Scaling Kubernetes Networking Beyond 100k Endpoints</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        KubeCon Amsterdam 2020 (Virtual)
-        <a class="video" target="_blank" href="https://youtu.be/a6SfbeM06Qo">Video</a>
+    <hr />
+
+    <h2>Talks</h2>
+
+    <ul class="talks">
+      <li>
+        <a href="https://youtu.be/TODO">Exiting Ingress With the Gateway API</a>
+        <span class="conference">KubeCon Detroit 2022</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/qn9bM5Cwvg0">SIG-Network: Intro & Deep-Dive</a>
+        <span class="conference">KubeCon Detroit 2022</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/YDomn3MwdVM">Gateway API: Building a k8s API with CRDs</a>
+        <span class="conference">Kubernetes Contributor Summit Detroit 2022</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/YPiuicxC8UU">Gateway API: Beta to GA</a>
+        <span class="conference">KubeCon Valencia 2022</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/lCRuzWFJBO0">Gateway API: A New Set of Kubernetes APIs for Advanced Traffic Routing</a>
+        <span class="conference">KubeCon Europe 2021 (Virtual)</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/rU56yr7txPM">Improving Network Efficiency with Topology Aware Routing</a>
+        <span class="conference">KubeCon North America 2020 (Virtual)</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/a6SfbeM06Qo">Scaling Kubernetes Networking Beyond 100k Endpoints</a>
+        <span class="conference">KubeCon Amsterdam 2020 (Virtual)</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/lWOSCXufgyw?t=1867">SIG-Network: Intro & Deep Dive</a>
+        <span class="conference">KubeCon San Diego 2019</span>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/embed/egQnymnZ9eg">Smarter Kubernetes Access Control: A Simpler Approach to Auth</a>
+        <span class="conference">KubeCon Barcelona 2019</span>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=i_ARHVbp_X4">Extending the Kubernetes API with a Custom Go Operator</a>
+        <span class="conference">GopherCon 2018</span>
       </li>
     </ul>
 
-    <h3 class="talk-title extra-top">SIG-Network Deep Dive</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        KubeCon San Diego 2019
-        <a class="video" target="_blank" href="https://youtu.be/lWOSCXufgyw?t=1867">Video</a>
+    <hr />
+
+    <h2>Writing</h2>
+
+    <ul class="talks">
+      <li>
+        <a href="https://opensource.googleblog.com/2022/07/gateway-api-graduates-to-beta.html">Gateway API Graduates to Beta</a>
+        <span class="conference">Google Open Source Blog</span>
+      </li>
+      <li>
+        <a href="https://kubernetes.io/blog/2022/07/13/gateway-api-graduates-to-beta/">Kubernetes Gateway API Graduates to Beta</a>
+        <span class="conference">Kubernetes Blog</span>
+      </li>
+      <li>
+        <a href="https://thenewstack.io/unifying-kubernetes-service-networking-again-with-the-gateway-api/">Unifying Kubernetes Service Networking (Again) with the Gateway API</a>
+        <span class="conference">The New Stack</span>
+      </li>
+      <li>
+        <a href="https://kubernetes.io/blog/2020/09/02/scaling-kubernetes-networking-with-endpointslices/">Scaling Kubernetes Networking With EndpointSlices</a>
+        <span class="conference">Kubernetes Blog</span>
+      </li>
+      <li>
+        <a href="https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/">Improvements to the Ingress API in Kubernetes 1.18</a>
+        <span class="conference">Kubernetes Blog</span>
       </li>
     </ul>
 
-    <h3 class="talk-title extra-top">Smarter Kubernetes Access Control: A Simpler Approach to Auth</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        KubeCon Barcelona 2019
-        <a class="slides" target="_blank"
-          href="https://kccnceu19.sched.com/event/MPdi/smarter-kubernetes-access-control-a-simpler-approach-to-auth-rob-scott-reactiveops">Slides</a>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=egQnymnZ9eg">Video</a>
+    <hr />
+
+    <h2>Other</h2>
+
+    <ul class="talks">
+      <li>
+        <a href="https://kubernetespodcast.com/episode/186-gateway-api-beta/">Gateway API Beta</a>
+        <span class="conference">Kubernetes Podcast</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/hqkPbW9RfD8">The Kubernetes Gateway API: Concepts</a>
+        <span class="conference">Learn Kubernetes With Google</span>
+      </li>
+      <li>
+        <a href="https://learnkubernetes.withgoogle.com/events/securing-services-with-istio-kubernetes">Securing your services with Istio on Kubernetes</a>
+        <span class="conference">Learn Kubernetes With Google</span>
+      </li>
+      <li>
+        <a href="https://youtu.be/xvXy2BiaWrQ">Spire Labs: Fault-tolerance with Kubernetes on AWS</a>
+        <span class="conference">This is My Architecture</span>
       </li>
     </ul>
 
-    <h3 class="talk-title extra-top">Operators, CRDs, and RBAC: Simplifying Kubernetes Authorization</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        Nashville Kubernetes Meetup
-        <a class="slides" target="_blank" href="simplifying-kubernetes-auth-nashville">Slides</a>
-      </li>
-      <li class="talk-event">
-        Advanced Kubernetes Workshop, Google Sunnyvale
-        <a class="slides" target="_blank" href="simplifying-kubernetes-authorization">Slides</a>
-      </li>
-    </ul>
-
-    <h3 class="talk-title extra-top">Kubernetes, Istio, and the Future</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        ChaDevOps
-        <a class="slides" target="_blank" href="kubernetes-istio-and-the-future">Slides</a>
-      </li>
-    </ul>
-
-    <h3 class="talk-title extra-top">Extending the Kubernetes API with a Custom Go Operator</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        GopherCon 2018
-        <a class="slides" target="_blank" href="extending-the-kubernetes-api">Slides</a>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=i_ARHVbp_X4">YouTube</a>
-      </li>
-    </ul>
-
-    <h3 class="talk-title extra-top">Simplifying Kubernetes RBAC Management</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        Kubernetes Atlanta Meetup
-        <a class="slides" target="_blank" href="simplifying-kubernetes-rbac-management">Slides</a>
-      </li>
-    </ul>
-
-    <h3 class="talk-title extra-top">From Cargo Ships to Shipping Docker Containers</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        ChaDev
-        <a class="slides" target="_blank"
-          href="https://speakerdeck.com/robscott/chadev-from-cargo-ships-to-shipping-docker-containers">Speaker
-          Deck</a>
-      </li>
-    </ul>
-
-    <h3 class="talk-title extra-top">Deploying Self Healing Services with Kubernetes</h3>
-    <ul class="talk-events">
-      <li class="talk-event">
-        TVA DevOps Day
-        <a class="slides" target="_blank" href="deploying-self-healing-services-with-kubernetes">Slides</a>
-      </li>
-      <li class="talk-event">
-        ChaDevOps
-        <a class="slides" target="_blank"
-          href="https://speakerdeck.com/robscott/chadevops-deploying-self-healing-services-with-kubernetes">Speaker
-          Deck</a>
-      </li>
-      <li class="talk-event">
-        RedHat DevNation Federal
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=eo0EMkVEn1k">YouTube</a>
-      </li>
-      <li class="talk-event">
-        ChaDev
-        <a class="slides" target="_blank"
-          href="https://speakerdeck.com/robscott/chadev-deploying-self-healing-services-with-kubernetes">Speaker
-          Deck</a>
-        <a class="video" target="_blank" href="https://www.youtube.com/watch?v=bsrXifq3Pjc">YouTube</a>
-      </li>
-    </ul>
-
-    <h2 class="section-header projects">Projects</h2>
-    <ul class="projects-list">
-      <li>
-        <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">Kubernetes
-          Service APIs</a>: A new set of advanced routing APIs.
-      </li>
-      <li>
-        <a href="https://kubernetes.io/docs/concepts/services-networking/ingress/" target="_blank">Kubernetes
-          Ingress</a>: API updates and GA graduation.
-      </li>
-      <li>
-        <a href="https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/" target="_blank">Kubernetes
-          EndpointSlices</a>: Providing
-        scalability and extensibility.
-      </li>
-
-      <li>
-        <a href="https://github.com/fairwindsops/polaris" target="_blank">Polaris</a>: Validation of best practices in
-        Kubernetes clusters.
-      </li>
-      <li>
-        <a href="https://github.com/robscott/kube-capacity" target="_blank">Kube Capacity</a>: A simple CLI that
-        provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
-      </li>
-      <li>
-        <a href="https://github.com/fairwindsops/rbac-manager" target="_blank">RBAC Manager</a>: A Kubernetes
-        operator
-        that simplifies the management of Role Bindings and Service Accounts.
-      </li>
-      <li>
-        <a href="https://github.com/fairwindsops/rbac-lookup" target="_blank">RBAC Lookup</a>: Easily find roles
-        and
-        cluster roles attached to any user, service account, or group name in your Kubernetes cluster.
-      </li>
-    </ul>
-
-    <h2 class="section-header writing">Writing</h2>
-    <ul class="writing-list">
-      <li>
-        <a href="https://kubernetes.io/blog/2020/09/02/scaling-kubernetes-networking-with-endpointslices/"
-          target="_blank">
-          Scaling Kubernetes Networking With EndpointSlices
-        </a>
-      </li>
-      <li>
-        <a href="https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/"
-          target="_blank">
-          Improvements to the Ingress API in Kubernetes 1.18
-        </a>
-      </li>
-      <li>
-        <a href="https://thenewstack.io/effective-monitoring-in-a-cloud-native-world/" target="_blank">
-          Effective Monitoring in a Cloud Native World
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/uptime-99/making-sense-of-kubernetes-rbac-and-iam-roles-on-gke-914131b01922"
-          target="_blank">
-          Making Sense of Kubernetes RBAC and IAM Roles on GKE
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/uptime-99/rbac-lookup-reverse-lookup-for-kubernetes-authorization-b19f1953cc6c"
-          target="_blank">
-          rbac-lookup: Reverse Lookup for Kubernetes Authorization
-        </a>
-      </li>
-      <li>
-        <a href="https://thenewstack.io/ci-cd-with-kubernetes-tools-and-practices/" target="_blank">
-          CI/CD with Kubernetes: Tools and Practices
-        </a>
-      </li>
-      <li>
-        <a href="https://thenewstack.io/7-features-that-make-kubernetes-ideal-for-ci-cd/" target="_blank">
-          7 Features that Make Kubernetes Ideal for CI/CD
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/uptime-99/simplifying-kubernetes-rbac-management-66938c67265c" target="_blank">
-          Simplifying Kubernetes RBAC Management
-        </a>
-      </li>
-      <li>
-        <a href="https://thenewstack.io/devops-microservices-kubernetes-a-cloud-native-approach" target="_blank">
-          DevOps, Microservices, Kubernetes: A Cloud-Native Approach
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/spire-labs/utilizing-kubernetes-liveness-and-readiness-probes-to-automatically-recover-from-failure-2fe0314f2b2e"
-          target="_blank">
-          Utilizing Kubernetes Liveness and Readiness Probes to Automatically Recover From Failure
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/spire-labs/mitigating-an-aws-instance-failure-with-the-magic-of-kubernetes-128a44d44c14"
-          target="_blank">
-          Mitigating an AWS Instance Failure with the Magic of Kubernetes
-        </a>
-      </li>
-    </ul>
-
-    <h2 class="section-header other">Other</h2>
-    <ul class="other-list">
-      <li>
-        Contributed first section of an Ebook published by The New Stack: <a
-          href="https://thenewstack.io/ebooks/kubernetes/ci-cd-with-kubernetes" target="_blank">CI/CD with
-          Kubernetes</a>
-      </li>
-      <li>
-        Featured in the AWS series "This is My Architecture": <a href="https://www.youtube.com/watch?v=xvXy2BiaWrQ"
-          target="_blank">
-          Spire Labs: Fault-tolerance with Kubernetes on AWS
-        </a>
-      </li>
-    </ul>
 
   </div>
 </body>

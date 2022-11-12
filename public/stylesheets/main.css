@@ -5,48 +5,39 @@ body {
 }
 
 .wrapper {
-  width: 570px;
+  width: 680px;
   padding: 0 15px;
-  margin: 100px auto;
+  margin: 80px auto;
+}
+
+img.picture {
+  width: 180px;
+  height: 180px;
+  border: 4px solid #fff;
+  border-radius: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
 h1.name {
   font-size: 70px;
-  line-height: 70px;
   font-weight: 700;
   color: #fff;
-  margin: 0;
-}
-
-h1.standalone-talk-title {
-  font-size: 50px;
-  font-weight: 700;
-  color: #fff;
-  margin: 40px;
+  margin: 20px 0;
   text-align: center;
-}
-
-img.picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  border: 4px solid #fff;
-  box-shadow: 0px 2px 4px #024;
-  display: block;
-  float: right;
-  margin: -20px 20px 0 0;
 }
 
 p.intro {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
-  margin: 10px 0 30px 190px;
-  color: #eff;
+  margin: 20px 0;
+  color: #fff;
+  text-align: justify;
 }
 
 a {
-  color: #bff;
+  color: #cff;
   text-decoration: none;
 }
 
@@ -54,88 +45,66 @@ a:hover {
   text-decoration: underline;
 }
 
-h2.section-header {
+.social-links {
   color: #fff;
-  font-weight: 700;
-  font-size: 24px;
-  margin-top: 40px;
-  clear: both;
-}
-
-h3.talk-title {
-  color: #eff;
-  font-weight: 300;
-  margin: -10px 0 0;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-h3.talk-title.extra-top {
-  margin-top: 15px;
-}
-
-ul.other-list li, ul.projects-list li, ul.writing-list li  {
-  color: #eff;
-  font-size: 16px;
-  line-height: 1.5;
+  list-style-type: none;
   margin: 10px 0;
-}
-
-ul.talk-events {
-  margin: 5px 0;
-  padding: 0 30px;
-}
-
-ul.talk-events li {
-  color: #dee;
-  font-size: 14px;
-  font-weight: 100;
-  line-height: 1.5;
-  margin: 5px 0;
-}
-
-ul.talk-events li a {
-  font-size: 13px;
-  margin-left: 6px;
-}
-
-.social-links .social-link {
-  color: #bdd;
-  margin: 10px 20px 40px 0;
-  font-size: 18px;
+  padding: 0px;
+  font-size: 16px;
   line-height: 40px;
   text-decoration: none;
   display: block;
-  float: left;
+  text-align: center;
 }
 
-.social-links .social-link .social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px -3px 0;
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top left;
-  fill: #fff;
+.social-links li {
+  display: inline;
+  margin: 0 10px;
 }
 
-.social-links .social-link .social-icon.twitter {
-  background-image: url(../images/twitter.svg);
+.social-links li span {
+  vertical-align: middle;
+  font-size: 28px;
+  padding: 0 4px 4px;
 }
 
-.social-links .social-link .social-icon.github {
-  background-image: url(../images/github.svg);
+.social-links li a {
+  font-weight: bold;
 }
 
-.social-links .social-link:hover {
+.social-links li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  border: 1px dotted #abc;
+  margin: 80px 50px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.talks {
   color: #fff;
 }
 
-.social-links .social-link:hover .social-icon.twitter {
-  background-image: url(../images/twitter-hover.svg);
+.talks a {
+  font-weight: bold;
 }
 
-.social-links .social-link:hover .social-icon.github {
-  background-image: url(../images/github-hover.svg);
+.talks li {
+  font-size: 18px;
+  line-height: 23px;
+  margin: 20px 0;
+}
+
+.talks li span {
+  display: block;
+  font-size: 14px;
 }
