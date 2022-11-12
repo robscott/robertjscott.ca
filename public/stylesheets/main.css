@@ -50,8 +50,8 @@ a:hover {
   list-style-type: none;
   margin: 10px 0;
   padding: 0px;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 50px;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -64,8 +64,8 @@ a:hover {
 
 .social-links li span {
   vertical-align: middle;
-  font-size: 28px;
-  padding: 0 4px 4px;
+  font-size: 32px;
+  padding: 0 5px 5px;
 }
 
 .social-links li a {
@@ -78,7 +78,7 @@ a:hover {
 }
 
 hr {
-  border: 1px dotted #abc;
+  border: 1px dotted #789;
   margin: 80px 50px;
 }
 
